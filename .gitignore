@@ -1,8 +1,8 @@
-/Examples
 *.html
 *.xml
 *.pdf
 *.pyc
-/__pycache__
-/Libraries/HashLibrary
-/Libraries/SeleniumLibrary
+__pycache__
+Libraries/HashLibrary
+Libraries/SeleniumLibrary
+.vscode
