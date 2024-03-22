@@ -1,0 +1,13 @@
+## Criar o build da imagem
+docker build -t robot ./docker_images
+
+
+## Consultar as imagens do seu Docker
+docker images
+
+## Remover uma imagem criada
+docker rmi robot
+
+
+## Rodar os testes do Robot dentro do container
+docker run --rm --name execucao_robot -v /home/qakarotto/workspaces/robot-framework/robotframework-avancado/examples/docker/suites:/opt/robotframework/tests -v /home/qakarotto/workspaces/robot-framework/robotframework-avancado/examples/docker/results:/opt/robotframework/results robot:latest robot -d /opt/robotframework/results opt/robotframework/tests
